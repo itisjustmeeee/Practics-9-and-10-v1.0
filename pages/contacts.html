@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="run">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/style.css">
+    <title>Контакты</title>
+</head>
+<body>
+    <div class="page-container">
+        <header class="header">
+            <h1>Хэдер</h1>
+        </header>
+        <nav class="nav">
+            <ul class="nav-list">
+                <li class="nav-item"><a class="nav-link" href="../index.html">Главная</a></li>
+                <li class="nav-item"><a class="nav-link" href="news.html">Новости</a></li>
+                <li class="nav-item"><a class="nav-link" href="goods.html">Товары</a></li>
+                <li class="nav-item"><a class="nav-link" href="contacts.html">Контакты</a></li>
+                <li class="nav-item"><a class="nav-link" href="practics.html">Практики</a></li>
+            </ul>
+        </nav>
+        <main class="contacts">
+            <h1 class="break_n">А вот наши контакты, но вы все равно не дозвонитесь до нас</h1>
+            <section class="contact_me">
+                <article class="experience-card">
+                    <h2 class="break_n">вот наша 100% настоящая почта:</h2>
+                    <p class="contact_me_txt">lolkek@gmail.com</p>
+                </article>
+                <article class="experience-card">
+                    <h2 class="break_n">адрес:</h2>
+                    <p class="contact_me_txt">г. Набережные Челны, ул. Трех переулков, д. 7, стр. 8</p>
+                </article>
+                <button class="c-button" onclick="document.getElementById('myDialog').showModal()">Написать мне</button>
+                <dialog id="myDialog">
+                    <p>Ой, сорян. Похоже, что я временно сдохла от кринжа. Попробуй в следующий разок UwU</p>
+                    <button id="closeBtn" onclick="document.getElementById('myDialog').close()">Ну ладно</button>
+                </dialog>
+            </section>
+        </main>
+        <footer class="footer">
+            <p>Футер</p>
+        </footer>
+    </div>
+</body>
+</html>
