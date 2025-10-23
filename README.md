@@ -3,4 +3,4 @@
 Этот репозиторий является контрольной работой №1 по фронтэнду и бэкэнду
 
 ## Ссылки   
-- [Публичная страница на Github Pages](https://itisjustmeeee.github.io/Practics-7-and-8-v1.0/)
+- [Публичная страница на Github Pages](https://itisjustmeeee.github.io/Practics-7-and-8-v2.0/)
