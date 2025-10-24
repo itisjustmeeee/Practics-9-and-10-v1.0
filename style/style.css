@@ -381,6 +381,28 @@ body {
     text-align: center;
 }
 
+.h2_class {
+    color: black;
+    align-items: center;
+}
+
+.nws-title {
+    color: black;
+    text-decoration: underline;
+    margin: 0 0 10px 0;
+    font-weight: 600;
+    font-size: 38px;
+}
+
+.goods-name {
+    color: black;
+    font-size: 24px;
+    text-decoration: underline;
+    text-decoration-style: wavy;
+    margin: 10px 0;
+    font-weight: 600;
+}
+
 
 @media (max-width: 768px) {
     .nav-list {
@@ -439,4 +461,146 @@ body {
         
 #closeBtn:hover {
     background: linear-gradient(120deg, #a82b2b, #38349e);
+}
+
+dialog::backdrop { 
+    background: rgba(0, 0, 0, 0.6); 
+    animation: fadeIn 0.3s ease; 
+} 
+
+dialog { 
+    border: none; 
+    border-radius: 12px; 
+    padding: 0; 
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); 
+    animation: slideIn 0.3s ease; 
+    max-width: 500px; 
+    width: 90vw; 
+    max-height: 90vh; 
+    overflow-y: auto; 
+} 
+
+.modal-header { 
+    background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%); 
+    color: white; 
+    padding: 1.5rem; 
+    border-radius: 12px 12px 0 0; 
+    margin: 0; 
+} 
+
+.modal-header h2 { 
+    margin: 0; 
+    color: white; 
+    font-size: 1.5rem; 
+} 
+
+.modal-content { 
+    padding: 2rem; 
+} 
+
+.form-group { 
+    margin-bottom: 1.5rem; 
+} 
+ 
+.form-group label { 
+    display: block; 
+    margin-bottom: 0.5rem; 
+    font-weight: 600; 
+    color: #2c3e50; 
+} 
+
+.form-group input, 
+.form-group select, 
+.form-group textarea { 
+    width: 100%; 
+    padding: 0.75rem; 
+    border: 2px solid #e9ecef; 
+    border-radius: 6px; 
+    font-size: 1rem; 
+    transition: border-color 0.3s ease; 
+    box-sizing: border-box; 
+} 
+
+.form-group input:focus, 
+.form-group select:focus, 
+.form-group textarea:focus { 
+    outline: none; 
+    border-color: #38f1c6; 
+} 
+
+.form-group textarea { 
+    min-height: 100px; 
+    resize: vertical; 
+} 
+
+.modal-actions { 
+    display: flex; 
+    gap: 1rem; 
+    justify-content: flex-end; 
+    margin-top: 2rem; 
+} 
+
+.btn { 
+    padding: 0.75rem 1.5rem; 
+    border: none; 
+    border-radius: 6px; 
+    cursor: pointer; 
+    font-size: 1rem; 
+    transition: all 0.3s ease; 
+    font-weight: 600; 
+} 
+
+.btn-primary { 
+    background: linear-gradient(135deg, #efd358 0%, #d84545 100%); 
+    color: white; 
+} 
+
+.btn-primary:hover {
+    background: linear-gradient(135deg, #c8b048 0%, #af3737 100%);
+    transform: translateY(-2px); 
+    box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4); 
+} 
+
+.btn-secondary { 
+    background: linear-gradient(135deg, #efd358 0%, #d84545 100%); 
+    color: #2c3e50; 
+    border: 2px solid #e9ecef; 
+} 
+
+.btn-secondary:hover { 
+    background: linear-gradient(135deg, #c8b048 0%, #af3737 100%);
+    transform: translateY(-2px); 
+    box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+} 
+
+.required { 
+    color: #e74c3c; 
+} 
+@keyframes fadeIn { 
+    from { opacity: 0; } 
+    to { opacity: 1; } 
+} 
+
+@keyframes slideIn { 
+    from {  
+        opacity: 0; 
+        transform: translateY(-50px) scale(0.9); 
+    } 
+    to {  
+        opacity: 1; 
+        transform: translateY(0) scale(1); 
+    } 
+} 
+
+@media (max-width: 600px) { 
+    dialog { 
+        margin: 1rem; 
+        width: calc(100vw - 2rem); 
+    } 
+    .modal-actions { 
+        flex-direction: column; 
+    } 
+    .btn { 
+        width: 100%;
+    }
 }
